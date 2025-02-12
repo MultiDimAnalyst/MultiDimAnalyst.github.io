@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Bookings</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="hamburger">
+            <div class="ham" id="ham">
+                ☰
+            </div>
+        </div>
+        <img src="img/paw.png" alt="" class="paw">
+        <h1 class="site-title">Snazzy Paws Grooming</h1>
+        <nav id="nav">
+            <a href="contact.html"><li>Contact</li></a>
+            <a href="bookings.html"><li>Bookings</li></a>
+            <a href="gallery.html"><li>Gallery</li></a>
+            <a href="services.html"><li>Services</li></a>
+            <a href="index.html"><li>Home</li></a>
+        </nav>
+    </div>    
+
+    <div class="booking-hero">
+        <div class="booking-page-title">Snazzy Paws Grooming Bookings</div>
+    </div>
+
+    <div class="bookings-main">
+        <div class="booking-form-container">
+            <div class="booking-form-title">Book Your Grooming Appointment</div>
+            <form action="submit-booking.php" method="POST">
+                <!-- Name -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <!-- Email -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <!-- Contact Number -->
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+
+                <label for="dog-name">Dogs Name:</label>
+                <input type="text" id="dog-name" name="dog-name" required>
+
+                <label for="dog-age">Dogs Age:</label>
+                <input type="text" id="dog-age" name="dog-age" required>
+
+                <label for="dog-breed">Dogs Breed:</label>
+                <input type="text" id="dog-breed" name="dog-breed" required>
+    
+                <!-- Calendar Date Selector -->
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <!-- Time Selector -->
+                <label for="time">Preferred Appointment Time:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <!-- Service Dropdown -->
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="Bath and Brush">Bath and Brush</option>
+                    <option value="Haircut">Haircut</option>
+                    <option value="Nail Trim">Nail Trim</option>
+                    <option value="Ear Cleaning">Ear Cleaning</option>
+                    <option value="Teeth Brushing">Teeth Brushing</option>
+                    <option value="De-shedding Treatment">De-shedding Treatment</option>
+                    <option value="Flea and Tick Treatment">Flea and Tick Treatment</option>
+                    <option value="Spa Package">Spa Package</option>
+                    <option value="Express Service">Express Service</option>
+                    <option value="Medicated Bath">Medicated Bath</option>
+                    <option value="Special-Breed Cuts">Special-Breed Cuts</option>
+                    <option value="Puppy Package">Puppy Package</option>
+                    <option value="Senior Dog Package">Senior Dog Package</option>
+                    <option value="Full Grooming Package">Full Grooming Package</option>
+                </select>
+    
+                <!-- Submit Button -->
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+   <div class="footer">
+        <div class="footer-container">
+            <div class="footer-site-logo">
+                <img src="img/paw.png" alt="" class="paw-logo-footer">
+                <h1 class="site-title-foorter">Snazzy Paws Grooming</h1>
+            </div>
+            <br><br>                
+            <div class="footer-about">
+                <p class="footer-about-title">About <i class='bx bx-location-plus'></i></p>
+                <p>Victoria Street</p> 
+                <p>Hamilton City</p> 
+                <p>New Zealand</p> 
+                <br>
+                <p>Phone: 02102563693</p> 
+                <p>Email: bookings@snazzypaws.co.nz</p>
+                <p>Hours: 9:00am - 5:00pm Monday - Saturday</p>
+                <br><br>
+            </div>
+
+            <div class="footer-links">
+                <p class="footer-links-title">Quick Links <i class='bx bx-link-alt' ></i></p>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="bookings.html"><li>Bookings</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="services.html"><li>Services</li></a>
+                <a href="index.html"><li>Home</li></a>
+                <br>
+            </div>
+        </div> 
+   </div>
+<script src="script.js"></script>
+</body>
+</html>
